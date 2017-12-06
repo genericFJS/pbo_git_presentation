@@ -14,6 +14,7 @@
 
 # Zuständigkeiten #
 Simon:
+- commit, push, pull, merge
 
 Jonatan:
 
