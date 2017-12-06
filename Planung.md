@@ -13,13 +13,24 @@
 - Veranschaulichung anhand von github (-App)
 	- offizielle github App?
 	- SmartGit?
+	- SourceTree?
 - Anwendungsbeispiel(e)
-	- Ausführen von commit, push, pull, merge (durch konflikt) und merge (von branch)
+	- Ausführen von commit, push, pull, merge (durch Konflikt) und merge (von branch)
 	- Anhand der zuvor vorgestellten App
 
 # Zuständigkeiten #
 Simon:
-- commit, push, pull, merge
+- Grundlagen:
+	- commit, push, pull, merge
+- Anbietervergleich
+- git in VSC
 
 Jonatan:
+- Grundlagen:
+	- .gitignore
+	- branches (forks)
+	- commit-message guideline
+- GUI Anwendungen
+	- cross-platform
+- Szenario Anwendungsbeispiel
 
