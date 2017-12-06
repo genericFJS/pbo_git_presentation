@@ -13,4 +13,7 @@
 - Anwendungsbeispiel(e)
 
 # Zuständigkeiten #
-- ???
+Simon:
+
+Jonatan:
+
