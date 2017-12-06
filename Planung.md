@@ -16,7 +16,7 @@
 	- SourceTree?
 - Anwendungsbeispiel(e)
 	- Ausführen von commit, push, pull, merge (durch Konflikt) und merge (von branch)
-	- Anhand der zuvor vorgestellten App
+	- Anhand der zuvor vorgestellten App und VSC
 
 # Zuständigkeiten #
 Simon:
