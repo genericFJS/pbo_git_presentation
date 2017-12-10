@@ -2,15 +2,18 @@
 \begin{frame}
 Hauptbefehle:
 \begin{itemize}
-	\item <1->init
-	\note<1>{den Aktuellen Ordner zu einem Git Repository machen}
-	\item <2->add
-		\note<2>{Dateien/Änderungen zu einem aktuelle commit hinzufügen}
+%	\item <1->init
+%	\note<1>{den Aktuellen Ordner zu einem Git Repository machen}
+%	\item <2->add
+%		\note<2>{Dateien/Änderungen zu einem aktuelle commit hinzufügen}
 	\item <3->commit
-		\note<3>{}
+		\note{Commits sind eingetragene Änderungen. Diese Einträge sollten immer einen Titel haben der die Änderungen beschreiben. Dabei sollte man eine Struktur einhalten, mehr dazu später. Vorsicht: Nach dem eine Änderung commited wurde ist sie noch nicht im Master Projekt zu finden. Dafür müssen die Änderungen...(push)}
 	\item <4->push
+	\note{Mit einem push leitet man den Vorgang ein, die noch temporären Änderungen nun einzutragen}
 	\item <5->pull
+	\note{Pull wird zum kopieren des aktuellen Zustandes des Masterprojektes bentutzt.}
 	\item <6->merge
+	\note{Beim zusammenführen der Dateien zum Master Projekt wird ein merge gemacht, damit sind nun die Änderungen in das Master Projekt eingetragen worden}
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -27,11 +30,9 @@ Hauptbefehle:
 \end{frame}
 \begin{frame}
 	\includegraphics[scale=0.3]{Bilder/git_graph4}
-	\note{Commits sind eingetragene Änderungen. Diese Einträge sollten immer einen Titel haben der die Änderungen beschreiben. Dabei sollte man eine Struktur einhalten, mehr dazu später. Vorsicht: Nach dem eine Änderung commited wurde ist sie noch nicht im Master Projekt zu finden. Dafür müssen die Änderungen...(push)}
 \end{frame}
 \begin{frame}
 	\includegraphics[scale=0.3]{Bilder/git_graph5}
-	\note{Mit einem push leitet man den Vorgang ein, die noch temporären Änderungen nun einzutragen}
 \end{frame}
 \begin{frame}
 	\includegraphics[scale=0.3]{Bilder/git_graph6}
