@@ -6,3 +6,5 @@
 *.snm
 *.synctex.gz
 *.toc
+*.xcf
+git_graph.png

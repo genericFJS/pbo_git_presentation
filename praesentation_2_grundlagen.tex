@@ -1,8 +1,42 @@
 \section{Grundlagen}
 \begin{frame}
-Hier steht was zu den Grundlagen.
+Hauptbefehle:
+\begin{itemize}
+	\item <1->init
+	\note<1>{den Aktuellen Ordner zu einem Git Repository machen}
+	\item <2->add
+		\note<2>{Dateien/Änderungen zu einem aktuelle commit hinzufügen}
+	\item <3->commit
+		\note<3>{}
+	\item <4->push
+	\item <5->pull
+	\item <6->merge
+\end{itemize}
 \end{frame}
-
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph1}
+	\note{Beispiel eines git Projektverlaufes}
+\end{frame}
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph2}
+	\note{Graue Linie: Master Projekt mit aktuellsten Änderungen. Alles geht zurück auf das Master Projekt. Es existiert immer nur ein Projekt mit dem interagiert wird.}
+\end{frame}
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph3}
+	\note{Bei einer Änderung wird ein indirekter Branch einer Projektes erstellt, wie zum Beispiel bei einem...(commit)}
+\end{frame}
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph4}
+	\note{Commits sind eingetragene Änderungen. Diese Einträge sollten immer einen Titel haben der die Änderungen beschreiben. Dabei sollte man eine Struktur einhalten, mehr dazu später. Vorsicht: Nach dem eine Änderung commited wurde ist sie noch nicht im Master Projekt zu finden. Dafür müssen die Änderungen...(push)}
+\end{frame}
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph5}
+	\note{Mit einem push leitet man den Vorgang ein, die noch temporären Änderungen nun einzutragen}
+\end{frame}
+\begin{frame}
+	\includegraphics[scale=0.3]{Bilder/git_graph6}
+	\note{Beim zusammenführen der Dateien zum Master Projekt wird ein merge gemacht, damit sind nun die Änderungen in das Master Projekt eingetragen worden}
+\end{frame}
 \subsection{Details}
 \begin{frame}
 Hier noch ein paar Details.
