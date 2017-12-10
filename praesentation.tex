@@ -1,0 +1,60 @@
+\documentclass[11pt]{beamer}
+\gdef\pathtomaster{_LaTeX_master}
+\input{\pathtomaster/fjs_packages-macros.sty}
+\input{\pathtomaster/htwcd_beamer.sty}
+
+\author{Simon Retsch und Jonatan Strube}
+\title{git}
+\date{13.12.2017}
+
+\newcommand{\pauseFrame}{
+\begin{frame}[plain]
+\begin{center}
+\dots
+\note{\Large NÄCHSTER}
+\end{center}
+\end{frame}
+}
+\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen=right}
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamertemplate{section in toc}[sections numbered]
+\setcounter{tocdepth}{1}
+
+\begin{document}
+
+\begin{frame}[plain]
+\begin{center}
+\includegraphics[width=.7\textwidth]{\pathtomaster/HTW.eps}
+\end{center}
+\maketitle
+\end{frame}
+
+\section*{Inhalt}
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\input{praesentation_1_prinzip}
+\input{praesentation_2_grundlagen}
+\input{praesentation_3_anbieter}
+\input{praesentation_4_apps}
+\input{praesentation_5_vorfuehrung}
+
+%{
+%\setbeamercolor{background canvas}{bg=}
+%\makeatletter
+%\@latex@warning{ACHTUNG: Vor dem Kompilieren dieser Praesentation muessen alle anderen pdfs kompiliert werden!!!}
+%\@latex@warning{Diese .tex Datei fuegt die pdfs nur aneinander!}
+%\makeatother
+%\includepdf[pages={-}]{Abschlusspraesentation_Projektmanager.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Analysierender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Entwerfender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Datenbankender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Implementierender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Testender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Dokumentierender.pdf}
+%\includepdf[pages={-}]{Abschlusspraesentation_Qualitätsmanager.pdf}
+%}
+
+\end{document}
