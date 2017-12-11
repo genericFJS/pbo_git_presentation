@@ -65,38 +65,43 @@ Hauptbefehle:
 	\connect{m3}{m4};
 	\connect[gray, shorten >= -10]{m4}{m5};
 	
-	\commentm{m1}{{\visible<1->{hallo m1}}};
-	\commentb{b1}{{\visible<2->{hallo b1}}};
-	\commentb{b2}{{\visible<3->{hallo b2}}};
-	\commentm{m2}{{\visible<4->{hallo m2}}};
-	\commento{o1}{{\visible<5->{hallo o1}}};
-	\commentb{b3}{{\visible<6->{hallo b3}}};
-	\commentm{m3}{{\visible<7->{hallo m3}}};
-	\commentm{m4}{{\visible<8->{hallo m4}}};
-	\commentm{m5}{{\visible<9->{hallo m5}}};
+	\commentm{m1}{{\visible<1->{\textcolor{htwgrey}{Master} Projekt (Master branch)}}};
+	\commentb{b1}{{\visible<2->{\textcolor{htwblue}{Lukas} erstellt branch von \textcolor{htwgrey}{Master} + commit}}};
+%	\commentb{b2}{{\visible<3->{}}};
+%	\commentm{m2}{{\visible<4->{}}};
+	\commento{o1}{{\visible<3->{\textcolor{htworange}{Johanna} erstellt branch von \textcolor{htwblue}{Lukas} + commit}}};
+%	\commentb{b3}{{\visible<6->{}}};
+	\commentm{m3}{{\visible<4->{\textcolor{htwgrey}{Master} merged seinen branch mit \textcolor{htwblue}{Lukas} branch}}};
+	\commentm{m4}{{\visible<5->{\textcolor{htwgrey}{Master} merged seinen branch mit \textcolor{htworange}{Johannas} branch}}};
+%	\commentm{m5}{{\visible<9->{}}};
 	\end{tikzpicture}
 	%\includegraphics[scale=0.3]{Bilder/git_graph1}
 	\note{Beispiel eines git Projektverlaufes}
+	\note<1>[item]{Aktuellste eingetragene Zustände eines Projektes}
+	\note<2>[item]{Branches tragen nicht den Namen des Erstellers}
+	\note<2>[item]{Es braucht nicht jeder Nutzer einen eigenen Branch}
 \end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph2}
-	\note{Graue Linie: Master Projekt mit aktuellsten Änderungen. Alles geht zurück auf das Master Projekt. Es existiert immer nur ein Projekt mit dem interagiert wird.}
-\end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph3}
-	\note{Bei einer Änderung wird ein indirekter Branch einer Projektes erstellt, wie zum Beispiel bei einem...(commit)}
-\end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph4}
-\end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph5}
-\end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph6}
-	\note{Beim zusammenführen der Dateien zum Master Projekt wird ein merge gemacht, damit sind nun die Änderungen in das Master Projekt eingetragen worden}
-\end{frame}
-\subsection{Details}
-\begin{frame}
-Hier noch ein paar Details.
-\end{frame}
+
+
+%\begin{frame}
+%	\includegraphics[scale=0.3]{Bilder/git_graph2}
+%	\note{Graue Linie: Master Projekt mit aktuellsten Änderungen. Alles geht zurück auf das Master Projekt. Es existiert immer nur ein Projekt mit dem interagiert wird.}
+%\end{frame}
+%\begin{frame}
+%	\includegraphics[scale=0.3]{Bilder/git_graph3}
+%	\note{Bei einer Änderung wird ein indirekter Branch einer Projektes erstellt, wie zum Beispiel bei einem...(commit)}
+%\end{frame}
+%\begin{frame}
+%	\includegraphics[scale=0.3]{Bilder/git_graph4}
+%\end{frame}
+%\begin{frame}
+%	\includegraphics[scale=0.3]{Bilder/git_graph5}
+%\end{frame}
+%\begin{frame}
+%	\includegraphics[scale=0.3]{Bilder/git_graph6}
+%	\note{Beim zusammenführen der Dateien zum Master Projekt wird ein merge gemacht, damit sind nun die Änderungen in das Master Projekt eingetragen worden}
+%\end{frame}
+%\subsection{Details}
+%\begin{frame}
+%Hier noch ein paar Details.
+%\end{frame}
