@@ -1,5 +1,5 @@
 # Themen #
-- Prinzip Versionsverwaltung (Vergleich: IT2, SE2 und PBO selber) -> text ok, binäre dateien meh
+- Prinzip Versionsverwaltung (Vergleich: IT2, SE2 und PBO selber)
 - Wichtige Grundlagen:
 	- commit, push, pull, merge
 	- .gitignore
@@ -21,14 +21,13 @@
 # Zuständigkeiten #
 Simon:
 - Grundlagen:
-	- commit, push, pull, merge
+	- commit, push, pull, merge (-> branches)
 - Anbietervergleich
 - git in VSC
 
 Jonatan:
 - Grundlagen:
 	- .gitignore
-	- branches (forks)
 	- commit-message guideline
 - GUI Anwendungen
 	- cross-platform
