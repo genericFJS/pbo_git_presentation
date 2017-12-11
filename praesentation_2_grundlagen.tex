@@ -28,8 +28,54 @@ Hauptbefehle:
 		\note<7>[item]{Gleiche Passagen müssen per Hand gemacht werden}
 \end{itemize}
 \end{frame}
-\begin{frame}
-	\includegraphics[scale=0.3]{Bilder/git_graph1}
+
+	\newcommand\commit[2][gray]{\node[commit,fill=#1,#1] (#2) {}; \node at (#2) {\small\strut};}
+	\newcommand\commentm[2]{\node [clabel, outer sep=3em] at (#1) {#2}}
+	\newcommand\commentb[2]{\node [clabel, outer sep=2.07em] at (#1) {#2}}
+	\newcommand\commento[2]{\node [clabel, outer sep=1.17em] at (#1) {#2}}
+	\newcommand\ghost[1]{\coordinate (#1);}
+	\newcommand\connect[3][gray]{\path (#2) [draw=#1, line width=.18em] to[out=-90,in=90] (#3);}
+\begin{frame}[fragile]
+	\begin{tikzpicture}	
+	\tikzstyle{commit}=[draw,circle,inner sep=0pt,minimum size=5pt]
+	\tikzstyle{clabel}=[right]
+	\tikzstyle{every path}=[draw]
+	\matrix [column sep={.9em,between origins},row sep=\lineskip]
+	{
+	\commit{m1} & & \\
+	& \commit[htwblue]{b1} & \\
+	& \commit[htwblue]{b2} & \\
+	\commit{m2} & \ghost{branch-o} & \\
+	& & \commit[htworange]{o1} \\
+	& \commit[htwblue]{b3} & \\
+	\commit{m3} & & \ghost{merge-o} \\
+	\commit{m4} & & \\
+	\commit{m5} & & \\
+	};
+	% verbindungen:
+	\connect[htworange]{branch-o}{o1};
+	\connect[htworange]{o1}{merge-o};
+	\connect[htworange]{merge-o}{m4};
+	\connect[htwblue]{m1}{b1};
+	\connect[htwblue]{b1}{b2};
+	\connect[htwblue]{b2}{b3};
+	\connect[htwblue]{b3}{m3};
+	\connect[gray, shorten <= -10]{m1}{m2};
+	\connect{m2}{m3};
+	\connect{m3}{m4};
+	\connect[gray, shorten >= -10]{m4}{m5};
+	
+	\commentm{m1}{{\visible<1->{hallo m1}}};
+	\commentb{b1}{{\visible<2->{hallo b1}}};
+	\commentb{b2}{{\visible<3->{hallo b2}}};
+	\commentm{m2}{{\visible<4->{hallo m2}}};
+	\commento{o1}{{\visible<5->{hallo o1}}};
+	\commentb{b3}{{\visible<6->{hallo b3}}};
+	\commentm{m3}{{\visible<7->{hallo m3}}};
+	\commentm{m4}{{\visible<8->{hallo m4}}};
+	\commentm{m5}{{\visible<9->{hallo m5}}};
+	\end{tikzpicture}
+	%\includegraphics[scale=0.3]{Bilder/git_graph1}
 	\note{Beispiel eines git Projektverlaufes}
 \end{frame}
 \begin{frame}
