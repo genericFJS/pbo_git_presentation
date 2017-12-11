@@ -1,5 +1,5 @@
 # Themen #
-- Prinzip Versionsverwaltung (Vergleich: IT2, SE2 und PBO selber)
+- Prinzip Versionsverwaltung (Vergleich: IT2, SE2 und PBO selber) -> text ok, binäre dateien meh
 - Wichtige Grundlagen:
 	- commit, push, pull, merge
 	- .gitignore

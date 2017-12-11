@@ -31,14 +31,14 @@
 \makeatletter
 \setbeamertemplate{footline}
 {
-\leavevmode
-\def\arraystretch{1.2}
-\arrayrulecolor{gray}
-\begin{tabular}{ p{0.167\textwidth} | p{0.491\textwidth} | p{0.089\textwidth} | p{0.103\textwidth}}
-\hline
-\strut\insertshortauthor & \insertshorttitle & Folie \insertframenumber{}% / \inserttotalframenumber{}
- & \@date\\
-\end{tabular}
+\textcolor{htwgrey}{
+\hspace*{2em}
+\strut\insertshortauthor \hfill
+\insertshorttitle \hfill
+Folie \insertframenumber{}% / \inserttotalframenumber{}
+\qquad
+\@date
+\hspace*{2em}\vspace*{1em}}
 }
 \setbeamertemplate{headline}
 {%
