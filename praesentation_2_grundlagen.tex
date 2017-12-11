@@ -4,16 +4,28 @@ Hauptbefehle:
 \begin{itemize}
 %	\item <1->init
 %	\note<1>{den Aktuellen Ordner zu einem Git Repository machen}
-%	\item <2->add
-%		\note<2>{Dateien/Änderungen zu einem aktuelle commit hinzufügen}
+	\item <2->add
+		\note<2>{Dateien/Änderungen zu einem aktuelle commit hinzufügen}
 	\item <3->commit
-		\note{Commits sind eingetragene Änderungen. Diese Einträge sollten immer einen Titel haben der die Änderungen beschreiben. Dabei sollte man eine Struktur einhalten, mehr dazu später. Vorsicht: Nach dem eine Änderung commited wurde ist sie noch nicht im Master Projekt zu finden. Dafür müssen die Änderungen...(push)}
+		\note<3>[item]{Commits sind eingetragene Änderungen}
+		\note<3>[item]{Diese Einträge sollten immer einen Titel haben der die Änderungen beschreiben}
+		\note<3>[item]{Dabei sollte man eine Struktur einhalten, mehr dazu später.}
+		\note<3>[item]{Vorsicht: Nach dem eine Änderung commited wurde ist sie noch nicht im Master Projekt zu finden. }
+		\note<3>[item]{Dafür müssen die Änderungen...(push)}
 	\item <4->push
-	\note{Mit einem push leitet man den Vorgang ein, die noch temporären Änderungen nun einzutragen}
+		\note<4>[item]{Push leitet Vorgang ein, temporären Änderungen einzutragen}
 	\item <5->pull
-	\note{Pull wird zum kopieren des aktuellen Zustandes des Masterprojektes bentutzt.}
-	\item <6->merge
-	\note{Beim zusammenführen der Dateien zum Master Projekt wird ein merge gemacht, damit sind nun die Änderungen in das Master Projekt eingetragen worden}
+		\note<5>[item]{Pull wird zum kopieren des aktuellen Zustandes des Masterprojektes benutzt}
+		\note<5>[item]{Alle gepushden Änderungen werden kopiert}
+	\item <6->branch
+		\note[item]<6>{Erstellung eines parallelen Stranges eines Projektes}
+		\note[item]<6>{Master Branch besteht immer}
+		\note[item]<6>{Man kann auf beiden Branches normal weiter arbeiten}
+		\note[item]<6>{Bsp.: longtime Support alter Software und neue Version}
+	\item <7->merge
+		\note[item]<7>{Zusammenführen von branches}
+		\note<7>[item]{Kann automatisch passieren}
+		\note<7>[item]{Gleiche Passagen müssen per Hand gemacht werden}
 \end{itemize}
 \end{frame}
 \begin{frame}
