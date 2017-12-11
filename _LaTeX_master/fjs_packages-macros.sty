@@ -437,29 +437,3 @@ bibencoding=ascii,
 % weiter Abkürzungen
 \newcommand{\gdw}{genau dann wenn}
 \newcommand{\lecdate}[1]{\marginpar{\small\textcolor{gray}{Vorlesung\newline #1}}}
-
-% ================ Epydoc ===============
-\usepackage{boxedminipage}
-\makeatletter
-\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
-\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
-\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
-\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
-\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
-\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
-\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
-\makeatother
-\usepackage{l3regex}
-
-\ExplSyntaxOn
-\ior_new:N \l_marie_input_stream 
-\NewDocumentCommand{\SearchAndReplace}{mmm}{%
-  \ior_open:Nn \l_marie_input_stream {#1}% Open the file
-  \ior_map_inline:Nn \l_marie_input_stream {% Read line by line
-    \tl_set:Nn \l_tmpa_tl {##1}% Store the line 
-    \regex_replace_all:nnN {#2} {#3} \l_tmpa_tl % Replace #2 by #3
-    \tl_use:N \l_tmpa_tl % Display the (modified) line content
-  }
-  \ior_close:N \l_marie_input_stream % close the file
-}
-\ExplSyntaxOff
