@@ -13,6 +13,15 @@
 \setbeamertemplate{section in toc}[sections numbered]
 \setcounter{tocdepth}{1}
 
+\usepackage{forest}
+\BeforeBeginEnvironment{frame}{\setstretch{1.5}
+\note{\setstretch{1.5}}}
+\newcommand\commit[2][htwgrey]{\node[commit,fill=#1,#1] (#2) {}; \node at (#2) {\small\strut};}
+\newcommand\commentm[2]{\node [clabel, outer sep=3em] at (#1) {#2}}
+\newcommand\commentb[2]{\node [clabel, outer sep=2.07em] at (#1) {#2}}
+\newcommand\commento[2]{\node [clabel, outer sep=1.17em] at (#1) {#2}}
+\newcommand\ghost[1]{\coordinate (#1);}
+\newcommand\connect[3][htwgrey]{\path (#2) [draw=#1, line width=.18em] to[out=-90,in=90] (#3);}
 \begin{document}
 
 \begin{frame}[plain]
@@ -29,9 +38,11 @@
 
 \input{praesentation_1_prinzip}
 \input{praesentation_2_grundlagen}
+\input{praesentation_2_grundlagen_2}
 \input{praesentation_3_anbieter}
 \input{praesentation_4_apps}
 \input{praesentation_5_vorfuehrung}
+\input{praesentation_6_quellen}
 
 %{
 %\setbeamercolor{background canvas}{bg=}

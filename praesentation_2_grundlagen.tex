@@ -29,13 +29,8 @@ Hauptbefehle:
 \end{itemize}
 \end{frame}
 
-	\newcommand\commit[2][gray]{\node[commit,fill=#1,#1] (#2) {}; \node at (#2) {\small\strut};}
-	\newcommand\commentm[2]{\node [clabel, outer sep=3em] at (#1) {#2}}
-	\newcommand\commentb[2]{\node [clabel, outer sep=2.07em] at (#1) {#2}}
-	\newcommand\commento[2]{\node [clabel, outer sep=1.17em] at (#1) {#2}}
-	\newcommand\ghost[1]{\coordinate (#1);}
-	\newcommand\connect[3][gray]{\path (#2) [draw=#1, line width=.18em] to[out=-90,in=90] (#3);}
 \begin{frame}[fragile]
+	\setstretch{1}
 	\begin{tikzpicture}	
 	\tikzstyle{commit}=[draw,circle,inner sep=0pt,minimum size=5pt]
 	\tikzstyle{clabel}=[right]
@@ -60,10 +55,10 @@ Hauptbefehle:
 	\connect[htwblue]{b1}{b2};
 	\connect[htwblue]{b2}{b3};
 	\connect[htwblue]{b3}{m3};
-	\connect[gray, shorten <= -10]{m1}{m2};
+	\connect[htwgrey, shorten <= -10]{m1}{m2};
 	\connect{m2}{m3};
 	\connect{m3}{m4};
-	\connect[gray, shorten >= -10]{m4}{m5};
+	\connect[htwgrey, shorten >= -10]{m4}{m5};
 	
 	\commentm{m1}{{\visible<1->{\textcolor{htwgrey}{Master} Projekt (Master branch)}}};
 	\commentb{b1}{{\visible<2->{\textcolor{htwblue}{Lukas} erstellt branch von \textcolor{htwgrey}{Master}}}};
