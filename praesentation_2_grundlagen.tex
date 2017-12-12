@@ -1,6 +1,6 @@
 \section{Grundlagen}
+\subsection{Hauptbefehle}
 \begin{frame}
-Hauptbefehle:
 \begin{itemize}
 %	\item <1->init
 %	\note<1>{den Aktuellen Ordner zu einem Git Repository machen}
@@ -29,6 +29,7 @@ Hauptbefehle:
 \end{itemize}
 \end{frame}
 
+\subsection{Hauptbefehle: Beispiel}
 \begin{frame}[fragile]
 	\setstretch{1}
 	\begin{tikzpicture}	
@@ -72,9 +73,15 @@ Hauptbefehle:
 	\end{tikzpicture}
 	%\includegraphics[scale=0.3]{Bilder/git_graph1}
 	\note{Beispiel eines git Projektverlaufes}
+	\note<1>[item]{Master Projekt (Master branch)}
 	\note<1>[item]{Aktuellste eingetragene Zustände eines Projektes}
+	\note<2>[item]{Lukas erstellt branch von Master}
 	\note<2>[item]{Branches tragen nicht den Namen des Erstellers}
 	\note<2>[item]{Es braucht nicht jeder Nutzer einen eigenen Branch}
+	\note<3>[item]{commit von Lukas}
+	\note<4>[item]{Johanna erstellt branch von Lukas}
+	\note<5>[item]{Master merged seinen branch mit Lukas branch}
+	\note<6>[item]{Master merged seinen branch mit Johannas branch}
 \end{frame}
 
 
