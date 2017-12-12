@@ -8,14 +8,13 @@
 \date{13.12.2017}
 
 \usepackage{pgfpages}
-%\setbeameroption{show notes on second screen=right}
+\setbeameroption{show notes on second screen=right}
 \setbeamercolor{section in toc}{fg=black,bg=white}
 \setbeamertemplate{section in toc}[sections numbered]
 \setcounter{tocdepth}{1}
 
 \usepackage{forest}
-\BeforeBeginEnvironment{frame}{\setstretch{1.5}
-\note{\setstretch{1.5}}}
+\BeforeBeginEnvironment{frame}{\setstretch{1.5}}
 \newcommand\commit[2][htwgrey]{\node[commit,fill=#1,#1] (#2) {}; \node at (#2) {\small\strut};}
 \newcommand\commentm[2]{\node [clabel, outer sep=3em] at (#1) {#2}}
 \newcommand\commentb[2]{\node [clabel, outer sep=2.07em] at (#1) {#2}}

@@ -1,28 +1,30 @@
 \subsection{gitignore}
 \begin{frame}
-Versionierung sinnvoll bei:
+\uncover<2->{Versionierung sinnvoll bei:}
 \begin{itemize}
-\item Textdateien
+\item<3-> Textdateien
 \end{itemize}
-Nicht sinnvoll bei:
+\uncover<4->{Nicht sinnvoll bei:}
 \begin{itemize}
-\item Binärdateien
+\item<5-> Binärdateien
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \begin{itemize}
-\item Blacklisting von Dateien/Ordnern
+\item<1-> Schwarze Liste von Dateien/Ordnern
 \begin{itemize}
-\item Binäres \hfill \lstinline`*.exe`
-\item Von Programmen \hfill \lstinline`.vscode/`
-\item Geheimes \hfill \lstinline`my_password.txt`
+\item<2-> Binäres \hfill \lstinline`*.exe`
+\item<3-> Von Programmen \hfill \lstinline`.vscode/`
+\item<4-> Geheimes \hfill \lstinline`my_password.txt`
 \end{itemize}
-\item Whitelisting
+\item<5-> Weiße Liste
 \begin{itemize}
-\item Ausnahmen zur Blacklist \hfill \lstinline`!final/*`
+\item<6-> Ausnahmen zur schwarzen Liste mit \lstinline`!` \hfill \lstinline`!final/*`
 \end{itemize}
 \end{itemize}
+\note<2>[item]{regex Charakter}
+\note<6>[item]{Ausnahme zur schwarzen Liste hinter schwarzer Liste!}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -44,6 +46,7 @@ bildchen/*
 
 \begin{frame}[fragile]
 \setstretch{1}
+\note[item]{.git beinhaltet alle Informationen zum Repository und wird selbst verständlich ignoriert}
 \begin{center}
 \begin{minipage}{.3\textwidth}
 \tiny
@@ -118,24 +121,23 @@ bildchen/*
 
 \subsection{Commit Nachricht Richtlinien}
 \begin{frame}
-Commit Nachricht besteht aus:
+\uncover<2->{Commit Nachricht besteht aus:}
 \begin{itemize}
-\item Thema/Titel (\emph{subject})\\
-Beschreibt Commit kurz.
-\item Rumpf/Beschreibung (\emph{body})\\
-Erläutert, \emph{was} \emph{warum} geändert wurde (nicht \emph{wie})
+\item<3-> Thema / Titel (\emph{subject})\\
+\uncover<5->{Kurze Beschreibung.}
+\item<4-> Rumpf / Beschreibung (\emph{body})\\
+\uncover<6->{\emph{Was} wurde \emph{warum} geändert (nicht \emph{wie})}
 \end{itemize}
 \end{frame}
 
-
-
 \begin{frame}{Richtlinien Titel}
 \begin{itemize}
-\item Kurzer Titel (50, max. 72 Zeichen)
-\item Mit Großbuchstabe beginnen
-\item Kein Punkt am Ende des Titels
-\item Imperativ benutzen
-\note{Im Englischen: If applied, this commit will ...\\
+\item<2-> Kurz (50, max. 72 Zeichen)
+\note<2>[item]{viele GUIs schneiden längere Titel ab}
+\item<3-> Mit Großbuchstabe beginnen
+\item<4-> Kein Punkt am Ende
+\item<5-> Imperativ
+\note<5>{Im Englischen: If applied, this commit will ...\\
 Positiv: If applied, this commit will remove deprecated methods
 Negativ: If applied, this commit will more fixes for broken stuff
 }
